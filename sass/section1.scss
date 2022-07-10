@@ -1,0 +1,55 @@
+@import 'variables.scss';
+
+#section-1{
+  height: 90vh;
+  max-width: 100%;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  .section1-wrapper{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .section1-content{
+      text-align: center;
+      font-weight: 600;
+
+      :not(p){
+        margin-top: 2rem;
+      }
+      p{
+        margin-top: 1rem;
+        color: $Grayish-Blue;
+      }
+      h1{
+        color: $Dark-Grayish-Blue;
+        font-size: $main-heading-size;
+      }
+    }
+  }
+}
+#ios,#mac{
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+#ios,#mac{
+  &:hover{
+    opacity: 0.7;
+  }
+}
+#ios{
+  background-color: $Strong-Cyan;
+  margin-right: 0.5rem;
+  border: 1px solid $ios-border;
+  border-bottom: 3px solid $ios-border;
+  box-shadow: $Strong-Cyan 0px 25px 20px -20px;
+}
+#mac{
+  background-color: $Light-Blue;
+  border: 1px solid $mac-border;
+  border-bottom: 3px solid $mac-border;
+  box-shadow: $Light-Blue 0px 25px 20px -20px;
+}

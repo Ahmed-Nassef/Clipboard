@@ -1,0 +1,28 @@
+@import 'variables.scss';
+
+#section-6{
+  max-width: 100%;
+
+  .section6-wrapper{
+    padding: 5rem;
+
+    .section6-content{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      :not(p){
+        margin-top: 2rem;
+      }
+      .section6-header{
+        h2{
+          color: $Dark-Grayish-Blue;
+          font-size: $smaller-heading-size;
+        }
+        p{
+          color: $Grayish-Blue;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

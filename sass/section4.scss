@@ -1,0 +1,44 @@
+@import 'variables.scss';
+
+#section-4{
+  max-width: 100%;
+  .section4-wrapper{
+    padding: 5rem;
+
+    .section4-content{
+      font-weight: 600;
+      .section4-header{
+        text-align: center;
+
+        h2{
+          font-size: $smaller-heading-size;
+          color: $Dark-Grayish-Blue;
+          margin-top: 2rem;
+        }
+        p{
+          color: $Grayish-Blue;
+          margin-top: 1rem;
+        }
+      }
+    
+      .section4-boxes{
+        height: auto;
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        align-items: center;
+
+        h3{
+          margin-top: 2rem;
+          color: $Dark-Grayish-Blue;
+        }
+        p{
+          margin-top: 1rem;
+          line-height: 2rem;
+          color: $Grayish-Blue;
+        }
+      }
+    }
+  }
+}

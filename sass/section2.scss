@@ -1,0 +1,55 @@
+@import 'variables.scss';
+#section-2{
+  max-width: 100%;
+  .section2-wrapper{
+    .section2-content{
+      .section2-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        :not(p){
+          margin-top: 2rem;
+        }
+        p{
+          margin-top: 1rem;
+          color: $Grayish-Blue;
+        }
+
+        h2{
+          font-size: $smaller-heading-size;
+          color: $Dark-Grayish-Blue;
+        }
+      }
+    
+    // computer
+    .section2-computer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      margin-top: 5rem;
+    
+      .section2-boxes{
+        display: flex;
+        flex-direction: column;
+        
+        .section2-box{
+          margin-bottom: 2rem;
+
+          h3{
+            color: $Dark-Grayish-Blue;
+          }
+          p{
+            margin-top: 1rem;
+            line-height: 1.5rem;
+            color: $Grayish-Blue;
+          }
+        }
+      }
+    }
+    }
+  }
+}

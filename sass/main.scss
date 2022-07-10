@@ -1,0 +1,25 @@
+@use 'section1.scss';
+@use 'section2.scss';
+@use 'section3.scss';
+@use 'section4.scss';
+@use 'section5.scss';
+@use 'section6.scss';
+@use 'footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+// font-family: 'Bai Jamjuree', sans-serif;
+
+*,::after,::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+ul{
+  list-style: none;
+}
