@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 #section-1{
-  height: 90vh;
+  height: auto;
   max-width: 100%;
   background-image: url(../images/bg-header-desktop.png);
   background-repeat: no-repeat;
@@ -34,6 +34,7 @@
   padding: 1rem 3rem;
   margin-top: 2rem;
   border-radius: 2rem;
+  width: fit-content;
 }
 #ios,#mac{
   &:hover{
@@ -52,4 +53,15 @@
   border: 1px solid $mac-border;
   border-bottom: 3px solid $mac-border;
   box-shadow: $Light-Blue 0px 25px 20px -20px;
+}
+
+// responsive design
+@media (max-width: 768px) {
+  .buttons{
+    display: flex;
+    flex-direction: column;
+  }
+  #mac,#ios{
+    align-self: center;
+  }
 }

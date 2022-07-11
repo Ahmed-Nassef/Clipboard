@@ -13,3 +13,28 @@
     }
   }
 }
+
+// responsive design
+
+@media (max-width: 1150px) {
+  #section-5{
+    .section5-wrapper{
+      .section5-content{
+        img{
+          max-width: 125px;
+          padding-top: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  #section-5{
+    .section5-wrapper{
+      .section5-content{
+        flex-direction: column;
+      }
+    }
+  }
+}

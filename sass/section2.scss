@@ -4,10 +4,7 @@
   .section2-wrapper{
     .section2-content{
       .section2-header{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        margin-top: 5rem;
         text-align: center;
 
         :not(p){
@@ -37,8 +34,16 @@
         flex-direction: column;
         
         .section2-box{
+          cursor: pointer;
           margin-bottom: 2rem;
+          padding: 1rem;
+          width: max-content;
+          transition:all 0.4s ease;
 
+
+          &:hover{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          }
           h3{
             color: $Dark-Grayish-Blue;
           }
@@ -50,6 +55,55 @@
         }
       }
     }
+    }
+  }
+}
+
+
+// responsive design
+
+@media (max-width: 1150px) {
+  .section2-computer{
+    .computer{
+      img{
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  #section-2{
+    .section2-wrapper{
+      .section2-content{
+        .section2-computer{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+
+          .section2-boxes{
+            .section2-box{
+              align-self: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .section2-content{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 460px) {
+  .section2-computer{
+    .computer{
+      img{
+        width: 400px;
+      }
     }
   }
 }

@@ -29,6 +29,14 @@
         text-align: center;
         align-items: center;
 
+        .section4-box{
+          padding: 1rem;
+          transition: all 0.4s ease;
+
+          &:hover{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          }
+        }
         h3{
           margin-top: 2rem;
           color: $Dark-Grayish-Blue;
@@ -37,6 +45,21 @@
           margin-top: 1rem;
           line-height: 2rem;
           color: $Grayish-Blue;
+        }
+      }
+    }
+  }
+}
+
+// responsive design
+
+@media (max-width: 460px) {
+  #section-4{
+    .section4-wrapper{
+      .section4-content{
+        .section4-boxes{
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(3, 1fr);
         }
       }
     }

@@ -32,3 +32,31 @@
     }
   }
 }
+
+@media (max-width: 1150px) {
+  #section-3{
+    .section3-wrapper{
+      .section3-content{
+        .section3-devices{
+          img{
+            max-width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  #section-3{
+    .section3-wrapper{
+      .section3-content{
+        .section3-devices{
+          img{
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
